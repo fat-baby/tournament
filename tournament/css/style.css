@@ -490,3 +490,22 @@ h2 {
   border-radius: 0;
   margin-right: 6px;
 }
+
+footer {
+  font-size: 1.1em;
+}
+
+a.credits {
+  
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  padding: 2px 12px 4px 12px;
+  margin: 0 3px;
+  font-weight: 900;
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+a.credits:hover {
+  background: #f0f;
+  color: #000;
+}
