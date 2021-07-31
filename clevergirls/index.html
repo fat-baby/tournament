@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="site.webmanifest">
+  <title>FATBABY.CLUB</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;900&display=swap');
+    body {
+      font-family: "Barlow";
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-weight: 900;
+      font-size: 3em;
+      background: #000;
+      color: #fff;
+      transform: rotateZ(-3deg);
+      padding: 0px 20px 5px 20px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      flex: 0 0 100%;
+    }
+
+    #timer {
+      font-size: 3em;
+      font-weight: 900;
+    }
+    /* h2 {
+      text-align: center;
+      flex: 0 0 100%;
+      font-weight: 500;
+    }
+    a {
+      margin: 0 0 0 -5px;
+      font-weight: 900;
+      color: #e01;
+      padding: 0 6px;
+      text-transform: uppercase;
+      transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      text-decoration: none;
+    }
+    a:hover {
+      background: #000;
+      color: #fff;
+    } */
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="row">
+      <h1>NOTHING HERE... YET</h1>
+    </div>
+    <div class="row">
+      <div id="timer"></div>
+    </div>
+    
+  </div>
+  <script>
+    const zeroPad = (s, i) => {
+      return String(s).padStart(i, '0');
+    }
+    
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep 1, 2021 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get today's date and time
+      var now = new Date().getTime();
+      
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+      
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+      // Display the result in the element with id="demo"
+      document.getElementById("timer").innerHTML = days + "d " +  hours + "h " + minutes + "m " + seconds + "s";
+      
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "IT'S TIME";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
