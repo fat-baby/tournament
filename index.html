@@ -80,9 +80,9 @@
                 </div>
                 <div class="team-vote">VOTE</div>
               </div>
-              <div class="box versus-graphic">
+              <!-- <div class="box versus-graphic">
                 VERSUS
-              </div>
+              </div> -->
               <div class="box team">
                 <div class="team-name">EVIL TEAM NAKED</div>
                 <div class="team-img">
@@ -95,12 +95,14 @@
             </div>
             <div class="teambox">
               <div class="hp">
-                <div class="hp-1">70%</div>
-                <div class="hp-2">30%</div>
+                <div id="hp1">70%</div>
+                <div id="hp2">30%</div>
               </div>
             </div>
             <div class="container timer">
-              <div class="display" id="timer">00:00:00</div>
+              <div id="timer-container">
+                <div class="display" id="timer">00:00:00</div>
+              </div>
             </div>
           </div>
 
@@ -195,7 +197,7 @@
         </div>
       </section> -->
 
-      <section id="FAQ">
+      <!-- <section id="FAQ">
         <div class="container">
           <h1>FAQ</h1>
           <div class="accordion" id="accordionExample">
@@ -238,7 +240,68 @@
           </div>
         </div>
     </section>
+ -->
 
+
+
+    <section id="FAQ" class="videoBackground">
+      <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+      <div class="overlay"></div>
+    
+      <!-- The HTML5 video element that will create the background video on the header -->
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="videos/bottom.webm" type="video/mp4">
+      </video>
+    
+      <!-- The header content -->
+      <!-- <div class="container h-100"> -->
+        <div class="container">
+          <h1>FAQ</h1>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What's this about?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>NFT Trainers fighting for the grand prize!</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How do i participate?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Vote for your favourite team!</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      <!-- </div> -->
+    </section>
       <!-- <div class="album py-5 bg-light">
         <div class="container">
 
@@ -444,7 +507,7 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("timer").innerHTML = zeroPad(hours, 2) + ":"
+        document.getElementById("timer").innerHTML = + zeroPad(hours + days*24, 2) + ":"
         + zeroPad(minutes, 2) + ":" + zeroPad(seconds, 2);
 
         // If the count down is finished, write some text
@@ -453,6 +516,35 @@
           document.getElementById("timer").innerHTML = "BATTLE OVER";
         }
       }, 1000);
+  </script>
+
+
+  <script>
+    const elem1 = document.getElementById("hp1")
+    const elem2 = document.getElementById("hp2")
+    const data = {
+      team1: {
+        color: "#ff00a0",
+        votes: 10,
+        elem: elem1
+      },
+      team2: {
+        color: "#00f0f0",
+        votes: 85,
+        elem: elem2
+      }
+    }
+
+    const updateVotes = () => {
+      const total = data.team1.votes + data.team2.votes
+      Object.values(data).forEach(team => {
+        const percentage = 100 / total * team.votes;
+        team.elem.style.width = `calc(${percentage.toFixed(0)}% - 3px)`;
+        team.elem.innerHTML = `${percentage.toFixed(1)}%`;
+      })
+    }
+
+    document.addEventListener("load", updateVotes());
   </script>
   </body>
 </html>
