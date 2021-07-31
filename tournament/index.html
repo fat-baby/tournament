@@ -61,6 +61,7 @@
       </video>
        
       <div id="versus">
+        <div class="container">
         <div class="teambox">
           <div class="box team">
             <div class="team-name" id="team1-name">TEAM NAKED</div>
@@ -95,6 +96,7 @@
             <div class="display" id="timer">00:00:00</div>
           </div>
         </div>
+      </div>
       </div>
     </section>
     
@@ -251,30 +253,29 @@
       const data = {
         team1: {
           name: "Team Naked",
-          title: "The naked menace",
-          description: "Team naked faster than light.",
+          title: "The naked menace!",
+          description: "We will be the best, like no one ever was! Because nakedness is justice!",
           video: "https://storage.opensea.io/files/24266851c4c0e67ff0813062a7424a5d.mp4",
           color: "#ff00a0",
           links: [
-            { text: "Member 1", url: "google.com"},
-            { text: "Member 2", url: "google.com"},
-            { text: "Member 3", url: "google.com"},
-            { text: "Member 4", url: "google.com"},
+            { text: "Pixelhans", url: "https://twitter.com/pxlhns"},
+            { text: "Zaza", url: "https://twitter.com/zazanft"},
+            { text: "Steamed Bun", url: "https://twitter.com/steamed_bunny"},
+            { text: "Sincos", url: "https://twitter.com/sincosnft"},
           ],
           votes: 30,
-          
         },
         team2: {
           name: "Purple Nurple",
           title: "Undefeated in single combat",
-          description: "We will prevail hahahaha",
-          color: "#00f0f0",
-          video: "https://storage.opensea.io/files/24266851c4c0e67ff0813062a7424a5d.mp4",
+          description: "You stand no chance! For we have the power of purp nurps! \n We will prevail ahahahaha",
+          color: "#c787f8",
+          video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
           links: [
-            { text: "Member 1", url: "google.com"},
-            { text: "Member 2", url: "google.com"},
-            { text: "Member 3", url: "google.com"},
-            { text: "Member 4", url: "google.com"},
+            { text: "HashBastards", url: "https://twitter.com/"},
+            { text: "HOLLYWEIRDZ", url: "https://twitter.com/"},
+            { text: "Junshi", url: "https://twitter.com/"},
+            { text: "Robbies", url: "https://twitter.com/"},
           ],
           votes: 85,
         }
@@ -285,6 +286,8 @@
         Object.keys(data).forEach(team => {
           document.getElementById(`${team}-name`).innerHTML = data[team].name;
           document.getElementById(`${team}-name`).style.background = data[team].color;
+          document.getElementById(`${team}-votes`).style.background = data[team].color;
+          document.getElementById(`${team}-title`).style.background = data[team].color;
           document.getElementById(`${team}-title`).innerHTML = data[team].title;
           document.getElementById(`${team}-video`).children[0].setAttribute("src", data[team].video);
           document.getElementById(`${team}-video`).load();
@@ -293,23 +296,22 @@
             document.getElementById(`${team}-member${index+1}`).innerHTML = data[team].links[index].text;
             document.getElementById(`${team}-member${index+1}`).setAttribute("href", data[team].links[index].url); 
           })
-          
         })
       };
       
       const updateVotes = () => {
         const total = data.team1.votes + data.team2.votes
-        Object.values(data).forEach(team => {
+        Object.entries(data).forEach(entries => {
+          [ teamName, team ] = entries;
           const percentage = 100 / total * team.votes;
-          team.elem.style.width = `calc(${percentage.toFixed(0)}% - 3px)`;
-          team.elem.innerHTML = `${percentage.toFixed(1)}%`;
+          document.getElementById(`${teamName}-votes`).style.width = `calc(${percentage.toFixed(0)}% - 3px)`;
+          document.getElementById(`${teamName}-votes`).innerHTML = `${percentage.toFixed(1)}%`;
         });
       };
       
       const init = () => {
-        // getDOM();
         updateTeams();
-        // updateVotes();
+        updateVotes();
       }
     </script>
   </body>

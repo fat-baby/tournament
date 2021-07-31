@@ -222,7 +222,7 @@ nav {
 .teambox {
   height: 100%;
   width: 100%;
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -275,10 +275,17 @@ nav {
   /* height: 20px; */
   font-size: 1.8em;
   line-height: 1.4em;
-  color: #fff;
   font-weight: 900;
-  background: #f00;
   z-index: 1000;
+  color: #000;
+  background: #fff;
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.team-vote:hover {
+  color: #fff;
+  background: #f00;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -292,10 +299,6 @@ nav {
     margin: -20px 0 0px 0;
     font-size: 1.4em;
   }
-}
-.team-vote:hover {
-  cursor: pointer;
-  background: #fff;
 }
 
 .versus-graphic {
@@ -319,7 +322,6 @@ nav {
   padding: 6px;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1100px;
   background:#000;
 }
 .hp div {
@@ -392,14 +394,17 @@ nav {
   background: #f0f;
   text-transform: uppercase;
   transform: rotateZ(-3deg);
-  /* team-description */
+  text-align: center;
+  max-width: 30vw;
   margin: 0px auto 25px auto;
 }
 
 .team-description {
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 0px;
 }
 .team-description p {
+  margin: 20px 0 40px 0;
   font-size: 18px;
 }
 
@@ -476,4 +481,12 @@ h2 {
 .lead {
   font-size: 18px;
   font-weight: 400;
+}
+
+
+.btn-secondary {
+  background: #900;
+  border: none;
+  border-radius: 0;
+  margin-right: 6px;
 }
