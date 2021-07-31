@@ -254,7 +254,7 @@
         team1: {
           name: "Team Naked",
           title: "The naked menace!",
-          description: "We will be the best, like no one ever was! Because nakedness is justice!",
+          description: "We will be the best, like no one ever was! <br> Because nakedness is justice!",
           video: "https://storage.opensea.io/files/24266851c4c0e67ff0813062a7424a5d.mp4",
           color: "#ff00a0",
           links: [
@@ -263,11 +263,11 @@
             { text: "Steamed Bun", url: "https://twitter.com/steamed_bunny"},
             { text: "Sincos", url: "https://twitter.com/sincosnft"},
           ],
-          votes: 30,
+          votes: 140,
         },
         team2: {
           name: "Purple Nurple",
-          title: "Undefeated in single combat",
+          title: "Undefeated in combat",
           description: "You stand no chance! For we have the power of purp nurps! \n We will prevail ahahahaha",
           color: "#c787f8",
           video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
@@ -277,7 +277,7 @@
             { text: "Junshi", url: "https://twitter.com/"},
             { text: "Robbies", url: "https://twitter.com/"},
           ],
-          votes: 85,
+          votes: 63,
         }
       }
 
@@ -291,7 +291,7 @@
           document.getElementById(`${team}-title`).innerHTML = data[team].title;
           document.getElementById(`${team}-video`).children[0].setAttribute("src", data[team].video);
           document.getElementById(`${team}-video`).load();
-          document.getElementById(`${team}-description`).innerHTML = data[team].description;
+          document.getElementById(`${team}-description`).innerHTML = "<span class='quotes'>\"</span>" + data[team].description + "<span class='quotes'>\"</span>";
           data[team].links.forEach((member, index) => {
             document.getElementById(`${team}-member${index+1}`).innerHTML = data[team].links[index].text;
             document.getElementById(`${team}-member${index+1}`).setAttribute("href", data[team].links[index].url); 
