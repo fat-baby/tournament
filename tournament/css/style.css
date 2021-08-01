@@ -552,3 +552,12 @@ a {
   color: #aaa;
   background: #333;
 }
+
+.accordion-body a {
+  font-weight: 900;
+  text-decoration: underline;
+  color: #000;
+}
+.accordion-body a:hover {
+  color: #f06;
+}
