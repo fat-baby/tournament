@@ -45,10 +45,26 @@ const data = {
       { text: "Steamed Bun", url: "https://twitter.com/steamed_bunny"},
       { text: "Sincos", url: "https://twitter.com/sincosnft"},
     ],
-    votes: 140,
+    votes: 63,
   },
   team2: {
-    name: "Purple Nurple",
+    name: "The Prophets",
+    title: "Our prediction is your defeat",
+    description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
+    color: "#34c92a",
+    video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
+    links: [
+      { text: "Noisy", url: "https://twitter.com/noisynfts"},
+      { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
+      { text: "DannyBlaze", url: "https://twitter.com/"},
+      { text: "Crucifore", url: "https://twitter.com/crucifore"},
+    ],
+    votes: 140, 
+  }
+}
+
+const teamPurpleNurple = {
+  name: "Purple Nurple",
     title: "Undefeated in combat",
     description: "You stand no chance! For we have the power of purp nurps! \n We will prevail ahahahaha",
     color: "#c787f8",
@@ -60,10 +76,22 @@ const data = {
       { text: "Robbies", url: "https://twitter.com/"},
     ],
     votes: 63,
-  }
 }
 
-
+const teamProphet = {
+  name: "The Prophets",
+  title: "Our prediction is your defeat",
+  description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
+  color: "#34c92a",
+  video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
+  links: [
+    { text: "Noisy", url: "https://twitter.com/noisynfts"},
+    { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
+    { text: "DannyBlaze", url: "https://twitter.com/"},
+    { text: "Crucifore", url: "https://twitter.com/crucifore"},
+  ],
+  votes: 63, 
+}
 const updateTeams = () => {
   Object.keys(data).forEach(team => {
     document.getElementById(`${team}-name`).innerHTML = data[team].name;
