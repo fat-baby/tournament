@@ -69,14 +69,14 @@ introAnimation
   })
   .add({
     targets: ".overlay",
-    duration: durationMultiplier * 1,
+    duration: durationMultiplier * 100,
     delay: delayMultiplier * 200,
     opacity: .8,
     easing: 'cubicBezier(.5, .05, .1, .3)'
   })
   .add({
     targets: ".overlay",
-    duration: durationMultiplier * 200,
+    duration: durationMultiplier * 700,
     delay: delayMultiplier * 0,
     opacity: 1,
     easing: 'cubicBezier(.5, .05, .1, .3)'
