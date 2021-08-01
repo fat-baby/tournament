@@ -32,6 +32,8 @@ var x = setInterval(function() {
   updateTimer();
 }, 1000);
 
+const durationMultiplier = .7;
+const delayMultiplier = 1;
 
 var introAnimation = anime.timeline({
   autoplay: false
@@ -40,80 +42,78 @@ var introAnimation = anime.timeline({
 introAnimation
   .add({
     targets: ".line1",
-    duration: 2500,
+    duration: durationMultiplier * 2500,
     opacity: 1,
     letterSpacing: "0.15em",
-    delay: 1000,
+    delay: delayMultiplier * 1000,
     easing: 'cubicBezier(0,0.25,0,0.99)'
   })
   .add({
     targets: ".line2",
-    duration: 3000,
-    delay: 0,
+    duration: durationMultiplier * 3000,
     letterSpacing: "0.15em",
     opacity: 1,
-    delay: 200,
+    delay: delayMultiplier * 200,
     easing: 'cubicBezier(0,0.25,0,0.99)'
   })
   .add({
     targets: ".line3",
-    duration: 3000,
-    delay: 0,
+    duration: durationMultiplier * 3000,
     letterSpacing: "0.15em",
     opacity: 1,
-    delay: 200,
+    delay: delayMultiplier * 200,
     easing: 'cubicBezier(0,0.25,0,0.99)'
   })
   .add({
     targets: ".overlay",
-    duration: 1,
-    delay: 200,
+    duration: durationMultiplier * 1,
+    delay: delayMultiplier * 200,
     opacity: .8,
     easing: 'cubicBezier(.5, .05, .1, .3)'
   })
   .add({
     targets: ".overlay",
-    duration: 150,
-    delay: 0,
+    duration: durationMultiplier * 150,
+    delay: delayMultiplier * 0,
     opacity: 1,
     easing: 'cubicBezier(.5, .05, .1, .3)'
   })
   .add({
     targets: ".word1",
-    duration: 1500,
+    duration: durationMultiplier * 1500,
     scale: 1.2,
-    delay: 200,
+    delay: delayMultiplier * 200,
     opacity: 1,
     easing: 'cubicBezier(.5, .05, .1, .3)'
   })
   .add({
     targets: ".word2",
-    duration: 1500,
+    duration: durationMultiplier * 1500,
     scale: 1.2,
-    delay: 200,
+    delay: delayMultiplier * 200,
     opacity: 1,
     easing: 'cubicBezier(.5, .05, .1, .3)'
   })
   .add({
     targets: ".word3",
-    duration: 1500,
+    duration: durationMultiplier * 1500,
     scale: 1.2,
-    delay: 200,
+    delay: delayMultiplier * 200,
     opacity: 1,
     easing: 'cubicBezier(.5, .05, .1, .3)'
   })
   .add({
     targets: "#timer",
-    duration: 2000,
-    delay: 500,
+    duration: durationMultiplier * 2000,
+    delay: delayMultiplier * 500,
     opacity: 1,
     easing: 'cubicBezier(.5, .05, .1, .3)'
   })
   .add({
     targets: ".overlay",
-    duration: 2000,
-    delay: 0,
-    opacity: .7,
+    duration: durationMultiplier * 2000,
+    delay: delayMultiplier * 0,
+    opacity: .5,
     easing: 'cubicBezier(.5, .05, .1, .3)',
     complete: () => { flicker(); }
   });
@@ -123,7 +123,7 @@ const flicker = () => {
   anime({
     targets: '.overlay',
     opacity: .85,
-    duration: 4000,
+    duration: durationMultiplier * 4000,
     direction: 'alternate',
     loop: true,
     easing: 'easeInOutSine'
