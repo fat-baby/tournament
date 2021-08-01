@@ -2,17 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-body {
-  /* font-family: Barlow, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-  font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* padding-top: 3rem; */
-  color: #bbb;
-  background: #000;
+* {
+  /* border: 1px solid red; */
 }
 
+html, body {
+  /* font-family: Barlow, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family: "Barlow";
+  font-smooth: always !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+  color: #bbb;
+  background: #000;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
 #teaser {
+  padding: 0;
+  font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
   height: 100vh;
   width: 100vw;
 }
@@ -23,6 +40,8 @@ body {
   position: relative;
   background-color: black;
   width: 100%;
+  padding: 0;
+  margin: 0;
   max-width: 100vw;
   box-sizing: border-box;
   overflow: hidden;
@@ -57,21 +76,7 @@ body {
   background-color: black;
   opacity: 1;
   z-index: 1;
-
-  /* animation-name: flicker;
-  animation-duration: 4s;
-  animation-delay: 0.2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; */
 }
-
-/* @keyframes flicker {
-  from {opacity: 1;}
-  to {opacity: .6;}
-} */
-
-
-
 
 .videoBackground .vignette {
   box-shadow: inset 0 0 100px #000;
@@ -80,16 +85,12 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
   background-color: none;
   opacity: 1;
   z-index: 2;
 }
-
-
-/* Media Query for devices withi coarse pointers and no hover functionality */
-
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
-
 @media (pointer: coarse) and (hover: none) {
   .videoBackground {
     background: url('../img/top.png') black no-repeat center center scroll;
@@ -128,11 +129,14 @@ body {
 .teaser-content p {
   font-size: 1.4em;
   opacity: 0;
+  font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .teaser-content h1 {
   font-size: 5em;
+  font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: .1em;
+  text-align: center;
 }
 
 .teaser-content h1 span {
@@ -141,6 +145,97 @@ body {
 
 .timeUnits {
   font-size: .5em !important;
-  color: #888;
+  color: #fff;
   margin: 0 12px 0 -4px;
+}
+
+.team-img {
+  width: 100%;
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(.85);
+}
+
+#team {
+  padding: 50px 0 50px 0;
+}
+
+.team-title {
+  text-align: center;
+  font-size: 3em;
+  margin: 0 0 20px 0;
+}
+
+.team-name {
+  text-align: center;
+  margin: auto;
+  font-size: 2em;
+  padding: 4px 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.team-description {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2em;
+}
+
+.team-member:hover .team-img {
+  transform: rotateZ(10deg) scale(.95);
+}
+
+footer {
+  background: #f26;
+  height: 10px;
+}
+
+.social.discord svg {
+  width: 25px;
+  height: 25px;
+}
+
+.social.twitter svg{
+  width: 22px;
+  height: 22px;
+} 
+
+nav {
+  /* margin-top: -50px; */
+  font-size: 1.3em;
+}
+
+#navbarCollapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  font-size: 1em;
+}
+
+#about {
+  padding: 10vh 0;
+}
+
+nav {
+  font-family: "Barlow";
+  text-transform: uppercase;
+}
+
+.about-logo {
+  max-height: 300px;
+}
+h1 {
+  font-family: "Barlow";
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.4em;
+  font-weight: 300;
+  font-family: "Barlow";
+}
+
+a:hover {
+  color: #f26;
 }

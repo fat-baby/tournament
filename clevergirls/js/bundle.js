@@ -35,6 +35,9 @@ var x = setInterval(function() {
 const durationMultiplier = .7;
 const delayMultiplier = 1;
 
+// const durationMultiplier = .1;
+// const delayMultiplier = .1;
+
 var introAnimation = anime.timeline({
   autoplay: false
 });
@@ -73,7 +76,7 @@ introAnimation
   })
   .add({
     targets: ".overlay",
-    duration: durationMultiplier * 150,
+    duration: durationMultiplier * 200,
     delay: delayMultiplier * 0,
     opacity: 1,
     easing: 'cubicBezier(.5, .05, .1, .3)'
@@ -111,19 +114,27 @@ introAnimation
   })
   .add({
     targets: ".overlay",
-    duration: durationMultiplier * 2000,
+    duration: durationMultiplier * 5000,
     delay: delayMultiplier * 0,
-    opacity: .5,
+    opacity: .1,
     easing: 'cubicBezier(.5, .05, .1, .3)',
     complete: () => { flicker(); }
-  });
+  })
+  // .add({
+  //   targets: "nav",
+  //   duration: durationMultiplier * 1000,
+  //   delay: delayMultiplier * 0,
+  //   marginTop: 0,
+  //   easing: 'cubicBezier(.5, .05, .1, .3)',
+  //   complete: () => { flicker(); }
+  // });
 
 
 const flicker = () => {
   anime({
     targets: '.overlay',
-    opacity: .85,
-    duration: durationMultiplier * 4000,
+    opacity: .7,
+    duration: durationMultiplier * 8000,
     direction: 'alternate',
     loop: true,
     easing: 'easeInOutSine'
