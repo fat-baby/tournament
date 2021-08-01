@@ -3,7 +3,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 2, 2021 00:00:00").getTime();
+var countDownDate = new Date("Aug 4, 2021 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -30,37 +30,54 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-const elem1 = document.getElementById("hp1")
-const elem2 = document.getElementById("hp2")
+
+
 const data = {
   team1: {
-    name: "Team Naked",
-    title: "The naked menace!",
-    description: "We will be the best, like no one ever was! <br> Because nakedness is justice!",
-    video: "https://storage.opensea.io/files/24266851c4c0e67ff0813062a7424a5d.mp4",
-    color: "#ff00a0",
+    name: "PURPLE NURPLES",
+    title: "Ready to fight!",
+    description: "Gramps! I'm fed up with waiting!",
+    video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
+    color: "#c787f8",
     links: [
-      { text: "Pixelhans", url: "https://twitter.com/pxlhns"},
-      { text: "Zaza", url: "https://twitter.com/zazanft"},
-      { text: "Steamed Bun", url: "https://twitter.com/steamed_bunny"},
-      { text: "Sincos", url: "https://twitter.com/sincosnft"},
+    { text: "HashBastards", url: "https://twitter.com/HashBastardsNFT"},
+    { text: "Robbies", url: "https://twitter.com/robbiesnft"},
+    { text: "HOLLYWEIRDZ", url: "https://twitter.com/HOLLYWEIRDZ420"},
+    { text: "Junshi", url: "https://twitter.com/JunshiNFT"},
     ],
-    votes: 63,
+    votes: 1,
   },
   team2: {
-    name: "The Prophets",
-    title: "Our prediction is your defeat",
-    description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
-    color: "#34c92a",
-    video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
+    name: "THE HALLOWS",
+    title: "Fear the hallows!",
+    description: "Fine then! Show me your best!",
+    video: "https://storage.opensea.io/files/083c8e295587c88157713f055b4b0f57.mp4",
+    color: "#eb682c",
     links: [
-      { text: "Noisy", url: "https://twitter.com/noisynfts"},
-      { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
-      { text: "DannyBlaze", url: "https://twitter.com/"},
-      { text: "Crucifore", url: "https://twitter.com/crucifore"},
+    { text: "Momo", url: "https://twitter.com/MomoUhOh"},
+    { text: "Searcher", url: "https://twitter.com/SearcherSunset"},
+    { text: "IndigeTal", url: "https://twitter.com/IndigetalG"},
+    { text: "Robbnotbob", url: "https://twitter.com/Robbnotbob1"},
     ],
-    votes: 140, 
+    votes: 1,
   }
+}
+
+ 
+
+const teamNaked = {
+  name: "Team Naked",
+  title: "The naked menace!",
+  description: "We will be the best, like no one ever was! <br> Because nakedness is justice!",
+  video: "https://storage.opensea.io/files/24266851c4c0e67ff0813062a7424a5d.mp4",
+  color: "#ff00a0",
+  links: [
+    { text: "Pixelhans", url: "https://twitter.com/pxlhns"},
+    { text: "Zaza", url: "https://twitter.com/zazanft"},
+    { text: "Steamed Bun", url: "https://twitter.com/steamed_bunny"},
+    { text: "Sincos", url: "https://twitter.com/sincosnft"},
+  ],
+  votes: 63,
 }
 
 const teamPurpleNurple = {
@@ -92,6 +109,8 @@ const teamProphet = {
   ],
   votes: 63, 
 }
+
+
 const updateTeams = () => {
   Object.keys(data).forEach(team => {
     document.getElementById(`${team}-name`).innerHTML = data[team].name;
