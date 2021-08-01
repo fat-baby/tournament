@@ -32,11 +32,11 @@ var x = setInterval(function() {
   updateTimer();
 }, 1000);
 
-const durationMultiplier = .7;
-const delayMultiplier = 1;
+let durationMultiplier = .7;
+let delayMultiplier = 1;
 
-// const durationMultiplier = .1;
-// const delayMultiplier = .1;
+// durationMultiplier = .1;
+// delayMultiplier = .1;
 
 var introAnimation = anime.timeline({
   autoplay: false

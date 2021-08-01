@@ -45,8 +45,11 @@
   <section id="teaser" class="videoBackground">
     <div class="vignette"></div>
     <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <video id="video-full" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="videos/bg.webm" type="video/mp4">
+    </video>
+    <video id="video-mobile" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="videos/bg-mobile.webm" type="video/mp4">
     </video>
 
     <div class="container teaser-content">
@@ -63,15 +66,15 @@
       
     </div>
   </section>
-  <hr>
+  
   <section id="about">
     <div class="container">
       <div class="row justify-content-center"">
         
         <div class="col-lg-4 col-md-6 col-sm-6">
-          <img class="about-logo" src="img/logo.jpg" alt="">
+          <img class="about-logo" src="img/logo.gif" alt="">
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="col-lg-4 col-md-6 col-sm-6 d-flex align-items-center flex-wrap align-content-center">
           <h1>ABOUT</h1>
           <p>Not much is known about this experiment yet. More information coming soon...</p>
         </div>

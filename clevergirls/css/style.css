@@ -92,6 +92,11 @@ a {
   z-index: 2;
 }
 
+#video-mobile {
+  display: none;
+}
+
+
 /* 
 @media (pointer: coarse) and (hover: none) {
   .videoBackground {
@@ -158,13 +163,13 @@ a {
 }
 
 #team {
-  padding: 50px 0 50px 0;
+  padding: 70px 0 120px 0;
 }
 
 .team-title {
   text-align: center;
-  font-size: 3em;
-  margin: 0 0 20px 0;
+  font-size: 2.5em;
+  margin: 0 0 40px 0;
 }
 
 .team-name {
@@ -242,3 +247,28 @@ a:hover {
   color: #f26;
 }
 
+
+
+@media (max-width: 768px) {
+  .line1, .line2, .line3 {
+    font-size: 1.2em !important;
+  }
+  .word1, .word2, .word3 {
+    font-size: .6em;
+  }
+  #video-full {
+    display: none;
+  } 
+  #video-mobile {
+    display: block;
+  } 
+}
+
+@media (pointer: coarse) and (hover: none) {
+  #video-full {
+    display: none;
+  } 
+  #video-mobile {
+    display: block;
+  } 
+}
