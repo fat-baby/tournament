@@ -140,7 +140,7 @@ footer p {
 
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
 
-@media (pointer: coarse) and (hover: none) {
+/* @media (pointer: coarse) and (hover: none) {
   .videoBackground {
     background: url('../img/top.png') black no-repeat center center scroll;
     background-size: cover;
@@ -149,7 +149,7 @@ footer p {
   .videoBackground > video {
     display: none;
   }
-}
+} */
 
 
 /* CUSTOM */
@@ -383,13 +383,13 @@ nav {
   position: relative;
   color: #fff;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 2em;
   padding: 0 12px 5px 12px;
   background: #f0f;
   text-transform: uppercase;
   transform: rotateZ(-3deg);
   text-align: center;
-  max-width: 35vw;
+  /* max-width: 35vw; */
   margin: 0px auto 25px auto;
 }
 
@@ -418,6 +418,9 @@ nav {
 
 #prize {
   padding: 100px 0;
+}
+#prize h2 {
+  color: #fff;
 }
 
 .lead{
@@ -489,7 +492,7 @@ h2 {
   background: #444;
   border: none;
   border-radius: 0;
-  margin-right: 6px;
+  margin: 0 6px 8px 0;
   font-weight: 900;
   font-size: 1.1em;
 }
@@ -561,3 +564,29 @@ a {
 .accordion-body a:hover {
   color: #f06;
 }
+#tournament {
+  padding-bottom: 50px;
+}
+
+#tournament img {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#tournament-title {
+  margin: 100px 0 0 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+}
+
+#tournament-text {
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.7em;
+}
+/* .prize-text {
+  display: flex;
+
+  align-items: center;
+} */
