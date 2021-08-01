@@ -35,8 +35,8 @@ var x = setInterval(function() {
 const data = {
   team1: {
     name: "PURPLE NURPLES",
-    title: "Ready to fight!",
-    description: "Gramps! I'm fed up with waiting!",
+    title: "Don't get it twisted!",
+    description: "Wait until you see my master balls!",
     video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
     color: "#c787f8",
     links: [
