@@ -182,3 +182,51 @@ const teams = {
     votes: 63,
   },
 }
+
+
+
+
+// const teamNaked = {
+//   name: "Team Naked",
+//   title: "The naked menace!",
+//   description: "We will be the best, like no one ever was! <br> Because nakedness is justice!",
+//   video: "https://storage.opensea.io/files/24266851c4c0e67ff0813062a7424a5d.mp4",
+//   color: "#ff00a0",
+//   links: [
+//     { text: "Pixelhans", url: "https://twitter.com/pxlhns"},
+//     { text: "Zaza", url: "https://twitter.com/zazanft"},
+//     { text: "Steamed Bun", url: "https://twitter.com/steamed_bunny"},
+//     { text: "Sincos", url: "https://twitter.com/sincosnft"},
+//   ],
+//   votes: 63,
+// }
+
+// const teamPurpleNurple = {
+//   name: "Purple Nurple",
+//     title: "Undefeated in combat",
+//     description: "You stand no chance! For we have the power of purp nurps! \n We will prevail ahahahaha",
+//     color: "#c787f8",
+//     video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
+//     links: [
+//       { text: "HashBastards", url: "https://twitter.com/"},
+//       { text: "HOLLYWEIRDZ", url: "https://twitter.com/"},
+//       { text: "Junshi", url: "https://twitter.com/"},
+//       { text: "Robbies", url: "https://twitter.com/"},
+//     ],
+//     votes: 63,
+// }
+
+// const teamProphet = {
+//   name: "The Prophets",
+//   title: "Our prediction is your defeat",
+//   description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
+//   color: "#34c92a",
+//   video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
+//   links: [
+//     { text: "Noisy", url: "https://twitter.com/noisynfts"},
+//     { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
+//     { text: "DannyBlaze", url: "https://twitter.com/"},
+//     { text: "Crucifore", url: "https://twitter.com/crucifore"},
+//   ],
+//   votes: 63, 
+// }

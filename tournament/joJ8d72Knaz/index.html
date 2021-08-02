@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>secret</title>
+  <style>
+    .button {
+      padding: 5px 10px;
+      background: #999;
+    }
+    .button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <input type="number" id="team1-votes">
+  <input type="number" id="team2-votes">
+  <div class="button" id="submit">SUBMIT</div>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+  <script>
+
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyCBJd6GbWVde-zNYDAsRj_gxYVhuU8p4Ic",
+      authDomain: "fatbaby-tournament.firebaseapp.com",
+      projectId: "fatbaby-tournament",
+      storageBucket: "fatbaby-tournament.appspot.com",
+      messagingSenderId: "977414828347",
+      appId: "1:977414828347:web:2e0ba9cdecb8cc6ef9871e"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const updateVotes = await db.collection('teams').set({
+      team1: { votes: document.getElementById("team1-votes").value },
+      team2: { votes: document.getElementById("team2-votes").value }
+    });
+
+    document.getElementById("submit").addEventListener("click", () => {
+      updateVotes();
+    })
+  </script>
+</body>
+</html>
+

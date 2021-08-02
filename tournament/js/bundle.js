@@ -1,3 +1,20 @@
+
+
+var firebaseConfig = {
+  apiKey: "AIzaSyCBJd6GbWVde-zNYDAsRj_gxYVhuU8p4Ic",
+  authDomain: "fatbaby-tournament.firebaseapp.com",
+  projectId: "fatbaby-tournament",
+  storageBucket: "fatbaby-tournament.appspot.com",
+  messagingSenderId: "977414828347",
+  appId: "1:977414828347:web:2e0ba9cdecb8cc6ef9871e"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+
+
+// TIMER
+
 const zeroPad = (s, i) => {
   return String(s).padStart(i, '0');
 }
@@ -32,9 +49,12 @@ var x = setInterval(function() {
 
 
 
+// VERSUS
+
+
 const data = {
   team1: {
-    name: "PURPLE NURPLES",
+    name: "PURPLE NURPLE",
     title: "Don't get it twisted!",
     description: "Wait until you see my master balls!",
     video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
@@ -45,7 +65,7 @@ const data = {
     { text: "HOLLYWEIRDZ", url: "https://twitter.com/HOLLYWEIRDZ420"},
     { text: "Junshi", url: "https://twitter.com/JunshiNFT"},
     ],
-    votes: 9,
+    votes: 13,
   },
   team2: {
     name: "THE HALLOWS",
@@ -59,57 +79,11 @@ const data = {
     { text: "IndigeTal", url: "https://twitter.com/IndigetalG"},
     { text: "Robbnotbob", url: "https://twitter.com/Robbnotbob1"},
     ],
-    votes: 7,
+    votes: 8,
   }
 }
 
  
-
-const teamNaked = {
-  name: "Team Naked",
-  title: "The naked menace!",
-  description: "We will be the best, like no one ever was! <br> Because nakedness is justice!",
-  video: "https://storage.opensea.io/files/24266851c4c0e67ff0813062a7424a5d.mp4",
-  color: "#ff00a0",
-  links: [
-    { text: "Pixelhans", url: "https://twitter.com/pxlhns"},
-    { text: "Zaza", url: "https://twitter.com/zazanft"},
-    { text: "Steamed Bun", url: "https://twitter.com/steamed_bunny"},
-    { text: "Sincos", url: "https://twitter.com/sincosnft"},
-  ],
-  votes: 63,
-}
-
-const teamPurpleNurple = {
-  name: "Purple Nurple",
-    title: "Undefeated in combat",
-    description: "You stand no chance! For we have the power of purp nurps! \n We will prevail ahahahaha",
-    color: "#c787f8",
-    video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
-    links: [
-      { text: "HashBastards", url: "https://twitter.com/"},
-      { text: "HOLLYWEIRDZ", url: "https://twitter.com/"},
-      { text: "Junshi", url: "https://twitter.com/"},
-      { text: "Robbies", url: "https://twitter.com/"},
-    ],
-    votes: 63,
-}
-
-const teamProphet = {
-  name: "The Prophets",
-  title: "Our prediction is your defeat",
-  description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
-  color: "#34c92a",
-  video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
-  links: [
-    { text: "Noisy", url: "https://twitter.com/noisynfts"},
-    { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
-    { text: "DannyBlaze", url: "https://twitter.com/"},
-    { text: "Crucifore", url: "https://twitter.com/crucifore"},
-  ],
-  votes: 63, 
-}
-
 
 const updateTeams = () => {
   Object.keys(data).forEach(team => {
