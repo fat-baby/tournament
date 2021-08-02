@@ -6,24 +6,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>secret</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+    
+    body {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    input {
+      background: #eee;
+      border-radius: 50px;
+      width: 100%;
+      border: none;
+      padding: 10px 20px;
+      outline: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
     .button {
-      padding: 5px 10px;
-      background: #999;
+      display: inline-block;
+      padding: 8px 20px;
+      background: #3af;
+      border-radius: 90px;
+      color: #fff;
+      font-weight: 700;
+      transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      font-size: 20px;
+      box-shadow: 
+        0 1px 20px rgba(0,0,0,.1),
+        0 1px 2px rgba(0,0,0,.1);
     }
     .button:hover {
-      background: #555;
+      cursor: pointer;
+      background: #8df;
+    }
+    .team {
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      margin: 10px;
+      box-shadow: 
+        0 1px 20px rgba(0,0,0,.1),
+        0 1px 2px rgba(0,0,0,.1);
+    }
+    .team-name {
+      color: #333;
+      width: 100%;
+      text-align: center;
+      margin: 0 0 10px 0;
+    }
+    .input-box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    label {
+      flex: 0 0 100%;
+      padding: 0 0 0 10px;
+      /* text-align: center; */
+      color: #aaa;
+      font-size: 12px;
+      box-sizing: border-box;
+    }
+    #submit-box {
+      display: flex;
+      justify-content: center;
+      flex: 0 0 100%;
     }
   </style>
 </head>
-<body>
-  <input type="number" id="team1-votes">
-  <input type="number" id="team2-votes">
-  <div class="button" id="submit">SUBMIT</div>
+<body onload="init()">
+  <div class="team" id="team1">
+    <h1 id="team1-name" class="team-name">Team 1</h1>
+    <div class="input-box">
+      <label for="team1-votes" id="team1-percentage">Votes</label>
+      <input type="number" name="team1-votes" id="team1-votes">
+    </div>
+  </div>
+  <div class="team" id="team2">
+    <h1 id="team2-name" class="team-name">Team 2</h1>
+    <div class="input-box">
+      <label for="team2-votes" id="team2-percentage">Votes</label>
+      <input type="number" name="team2-votes" id="team2-votes">
+    </div>
+  </div>
+  <section id="submit-box">
+    <div class="button" id="submit">SUBMIT</div>
+  </section>
   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
   <script>
-
-
     var firebaseConfig = {
       apiKey: "AIzaSyCBJd6GbWVde-zNYDAsRj_gxYVhuU8p4Ic",
       authDomain: "fatbaby-tournament.firebaseapp.com",
@@ -35,14 +111,43 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-    const updateVotes = await db.collection('teams').set({
-      team1: { votes: document.getElementById("team1-votes").value },
-      team2: { votes: document.getElementById("team2-votes").value }
-    });
+    var db = firebase.firestore();
+    const ref = db.collection('teams').doc("teams");
+    const votes1 = document.getElementById("team1-votes");
+    const votes2 = document.getElementById("team2-votes");
+
+
+
+    const updateVotes = () => {
+      ref.set({
+        team1: { votes: votes1.value },
+        team2: { votes: votes2.value },
+      });
+    }
 
     document.getElementById("submit").addEventListener("click", () => {
       updateVotes();
     })
+
+    const init = () => {
+      
+      ref.get().then((doc) => {
+        votes1.value = doc.data().team1.votes;
+        votes2.value = doc.data().team2.votes;
+        setPercentage();
+      })
+
+    }
+
+    const setPercentage = () => {
+      const total = parseInt(votes1.value) + parseInt(votes2.value);
+      document.getElementById("team1-percentage").innerHTML = "Votes - " + (parseInt(votes1.value) / total * 100).toFixed(1) + " % of " + total;
+      document.getElementById("team2-percentage").innerHTML = "Votes - " + (parseInt(votes2.value) / total * 100).toFixed(1) + " % of " + total;
+    }
+    document.getElementById("team1-votes").addEventListener("keyup", setPercentage);
+    document.getElementById("team2-votes").addEventListener("keyup", setPercentage);
+    
+    
   </script>
 </body>
 </html>

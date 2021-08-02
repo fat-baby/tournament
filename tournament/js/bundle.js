@@ -10,7 +10,7 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
+const ref = db.collection('teams').doc("teams");
 
 
 // TIMER
@@ -103,16 +103,26 @@ const updateTeams = () => {
 };
 
 const updateVotes = () => {
-  const total = data.team1.votes + data.team2.votes
-  Object.entries(data).forEach(entries => {
-    [ teamName, team ] = entries;
-    const percentage = 100 / total * team.votes;
-    document.getElementById(`${teamName}-votes`).style.width = `calc(${percentage.toFixed(0)}% - 3px)`;
-    document.getElementById(`${teamName}-votes`).innerHTML = `${percentage.toFixed(1)}%`;
-  });
+  // const total = data.team1.votes + data.team2.votes
+  // Object.entries(data).forEach(entries => {
+  //   [ teamName, team ] = entries;
+  //   const percentage = 100 / total * team.votes;
+  //   document.getElementById(`${teamName}-votes`).style.width = `calc(${percentage.toFixed(0)}% - 3px)`;
+  //   document.getElementById(`${teamName}-votes`).innerHTML = `${percentage.toFixed(1)}%`;
+  // });
+
+  // const init = () => {
+    ref.get().then((doc) => {
+      document.getElementById("team1-votes").value = doc.data().team1.votes;
+      document.getElementById("team2-votes").value = doc.data().team2.votes;
+    })
+  // }
+    setInterval(updateVotes, 300000);
 };
 
 const init = () => {
   updateTeams();
   updateVotes();
 }
+
+
