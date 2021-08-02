@@ -45,7 +45,7 @@ const data = {
     { text: "HOLLYWEIRDZ", url: "https://twitter.com/HOLLYWEIRDZ420"},
     { text: "Junshi", url: "https://twitter.com/JunshiNFT"},
     ],
-    votes: 1,
+    votes: 9,
   },
   team2: {
     name: "THE HALLOWS",
@@ -59,7 +59,7 @@ const data = {
     { text: "IndigeTal", url: "https://twitter.com/IndigetalG"},
     { text: "Robbnotbob", url: "https://twitter.com/Robbnotbob1"},
     ],
-    votes: 1,
+    votes: 7,
   }
 }
 
