@@ -70,7 +70,7 @@ const data = {
   },
   team5: {
     name: "CGSA",
-    title: "雑音があるけど少しだけ演技声してみてた!",
+    title: "可愛い天使は鋭い牙と爪がある!",
     description: "Give us all you got!",
     video: "https://storage.opensea.io/files/199fc81dccdcde94cd62352b1a445c24.mp4",
     color: "#a9b435",
