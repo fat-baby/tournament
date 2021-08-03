@@ -70,8 +70,8 @@ const data = {
   },
   team5: {
     name: "CGSA",
-    title: "Give us all you got!",
-    description: "Smell you later",
+    title: "雑音があるけど少しだけ演技声してみてた!",
+    description: "Give us all you got!",
     video: "https://storage.opensea.io/files/199fc81dccdcde94cd62352b1a445c24.mp4",
     color: "#a9b435",
     links: [
