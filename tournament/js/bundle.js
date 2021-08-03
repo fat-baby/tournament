@@ -21,7 +21,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 3, 2021 11:15:00").getTime();
+var countDownDate = new Date("Aug 4, 2021 12:58:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
