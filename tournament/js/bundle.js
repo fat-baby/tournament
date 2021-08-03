@@ -54,7 +54,7 @@ var x = setInterval(function() {
 
 
 const data = {
-  team4: {
+  team1: {
     name: "THE PROPHETS",
     title: "Our prediction is your defeat",
     description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
@@ -68,7 +68,7 @@ const data = {
     ],
     votes: 1, 
   },
-  team5: {
+  team2: {
     name: "CGSA",
     title: "可愛い天使は鋭い牙と爪がある!",
     description: "Give us all you got!",
