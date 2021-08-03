@@ -71,7 +71,7 @@ const data = {
   team2: {
     name: "CGSA",
     title: "可愛い天使は鋭い牙と爪がある!",
-    description: "The Finest experts from all over and out of this world have gathered in the CGSA team. They're mission, make NFT great again..",
+    description: "The finest experts from all over and out of this world have gathered in the CGSA team. They're mission, make NFT great again..",
     video: "https://storage.opensea.io/files/199fc81dccdcde94cd62352b1a445c24.mp4",
     color: "#a9b435",
     links: [
