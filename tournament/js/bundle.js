@@ -54,33 +54,33 @@ var x = setInterval(function() {
 
 
 const data = {
-  team1: {
-    name: "PURPLE NURPLE",
-    title: "Don't get it twisted!",
-    description: "Wait until you see my master balls!",
-    video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
-    color: "#c787f8",
+  team4: {
+    name: "THE PROPHETS",
+    title: "Our prediction is your defeat",
+    description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
+    color: "#34c92a",
+    video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
     links: [
-    { text: "HashBastards", url: "https://twitter.com/HashBastardsNFT"},
-    { text: "Robbies", url: "https://twitter.com/robbiesnft"},
-    { text: "HOLLYWEIRDZ", url: "https://twitter.com/HOLLYWEIRDZ420"},
-    { text: "Junshi", url: "https://twitter.com/JunshiNFT"},
+      { text: "Noisy", url: "https://twitter.com/noisynfts"},
+      { text: "Crucifore", url: "https://twitter.com/crucifore"},
+      { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
+      { text: "Dweaver", url: "https://twitter.com/DWeaver803"},
     ],
-    votes: 13,
+    votes: 1, 
   },
-  team2: {
-    name: "THE HALLOWS",
-    title: "Fear the hallows!",
-    description: "Fine then! Show me your best!",
-    video: "https://storage.opensea.io/files/083c8e295587c88157713f055b4b0f57.mp4",
-    color: "#eb682c",
+  team5: {
+    name: "CGSA",
+    title: "Give us all you got!",
+    description: "Smell you later",
+    video: "https://storage.opensea.io/files/199fc81dccdcde94cd62352b1a445c24.mp4",
+    color: "#a9b435",
     links: [
-    { text: "Momo", url: "https://twitter.com/MomoUhOh"},
-    { text: "Searcher", url: "https://twitter.com/SearcherSunset"},
-    { text: "IndigeTal", url: "https://twitter.com/IndigetalG"},
-    { text: "Robbnotbob", url: "https://twitter.com/Robbnotbob1"},
+      { text: "Quick Bill", url: "https://twitter.com/Quick_Bill69"},
+      { text: "Stray Alien", url: "https://twitter.com/StrayAliens"},
+      { text: "Aya", url: "https://twitter.com/crypto_yankiz"},
+      { text: "Radio Pill", url: "https://twitter.com/radiopill69"},
     ],
-    votes: 8,
+    votes: 1,
   }
 }
 
