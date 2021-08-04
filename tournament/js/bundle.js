@@ -21,7 +21,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 5, 2021 01:45:00 GMT+0200").getTime();
+var countDownDate = new Date("Aug 5, 2021 13:50:00 GMT+0200").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -55,33 +55,33 @@ var x = setInterval(function() {
 
 const data = {
   team1: {
-    name: "THE PROPHETS",
-    title: "Our prediction is your defeat",
-    description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
-    color: "#34c92a",
-    video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
+    name: "DIABLO",
+    title: "Turning up the heat!",
+    description: "If you step to us, you might get burned.",
+    video: "https://storage.opensea.io/files/f5be73b750109ba9dffc790ad6d15026.mp4",
+    color: "#18b3eb",
     links: [
-      { text: "Noisy", url: "https://twitter.com/noisynfts"},
-      { text: "Crucifore", url: "https://twitter.com/crucifore"},
-      { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
-      { text: "Dweaver", url: "https://twitter.com/DWeaver803"},
-    ],
-    votes: 1, 
-  },
-  team2: {
-    name: "CGSA",
-    title: "可愛い天使は鋭い牙と爪がある!",
-    description: "The finest experts from all over and out of this world have gathered in the CGSA team. They're mission, make NFT great again..",
-    video: "https://storage.opensea.io/files/199fc81dccdcde94cd62352b1a445c24.mp4",
-    color: "#e9d335",
-    links: [
-      { text: "Quick Bill", url: "https://twitter.com/Quick_Bill69"},
-      { text: "Stray Alien", url: "https://twitter.com/StrayAliens"},
-      { text: "Aya", url: "https://twitter.com/crypto_yankiz"},
-      { text: "Radio Pill", url: "https://twitter.com/radiopill69"},
+      { text: "Valyrian", url: "https://twitter.com/LillsLou"},
+      { text: "BRYMIC", url: "https://twitter.com/brymic_"},
+      { text: "SoulzBruh", url: "https://twitter.com/SoulzBruh"},
+      { text: "Calabasas", url: "https://twitter.com/CalabasasKidNFT"},
     ],
     votes: 1,
-  }
+  },
+  team2: {
+    name: "X PuSsYxxMoNeYxxW33D X",
+    title: "You don't want this fight!",
+    description: "You won't stand a chance against us!",
+    video: "https://storage.opensea.io/files/38945227803851764ca9482dda239a3a.mp4",
+    color: "#ff3af6",
+    links: [
+      { text: "Stacy", url: "https://twitter.com/cryptostacys"},
+      { text: "Socra", url: "https://twitter.com/SocratreesMusic"},
+      { text: "Devil", url: "https://twitter.com/Crypto_Devils"},
+      { text: "NONE", url: "https://twitter.com/NONE32X32"},
+    ],
+    votes: 1,
+  },
 }
 
  
