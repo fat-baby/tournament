@@ -590,3 +590,24 @@ a {
 
   align-items: center;
 } */
+
+.tiebreaker-notice {
+  display: inline-block;
+  margin: -30px auto 0 auto;
+  text-align: center;
+  
+  width: 100%;
+  z-index: 1000;
+}
+.tiebreaker-notice a {
+  font-weight: 900;
+  color: #fff !important;
+  font-size: 1.2em;
+  text-decoration: underline;
+  padding: 5px 8px;
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: #555;
+}
+.tiebreaker-notice a:hover {
+  background: #e03;
+}
