@@ -21,7 +21,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 5, 2021 13:50:00 GMT+0200").getTime();
+var countDownDate = new Date("Aug 6, 2021 13:57:00 GMT+0200").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -55,30 +55,30 @@ var x = setInterval(function() {
 
 const data = {
   team1: {
-    name: "DIABLO",
-    title: "Turning up the heat!",
-    description: "If you step to us, you might get burned.",
-    video: "https://storage.opensea.io/files/f5be73b750109ba9dffc790ad6d15026.mp4",
-    color: "#18b3eb",
+    name: "TEAM NAKED",
+    title: "The naked menace!",
+    description: "We will be the best, like no one ever was! Because nakedness is justice.",
+    video: "https://storage.opensea.io/files/24266851c4c0e67ff0813062a7424a5d.mp4",
+    color: "#eb8ada",
     links: [
-      { text: "Valyrian", url: "https://twitter.com/LillsLou"},
-      { text: "BRYMIC", url: "https://twitter.com/brymic_"},
-      { text: "SoulzBruh", url: "https://twitter.com/SoulzBruh"},
-      { text: "Calabasas", url: "https://twitter.com/CalabasasKidNFT"},
+      { text: "Zaza", url: "https://twitter.com/ZazaNFT"},
+      { text: "Sincos", url: "https://twitter.com/sincosNFT"},
+      { text: "Hans", url: "https://twitter.com/pxlhns"},
+      { text: "Steamed Bun", url: "https://twitter.com/Steamed_Bunny"},
     ],
     votes: 1,
   },
   team2: {
-    name: "X PuSsYxxMoNeYxxW33D X",
-    title: "You don't want this fight!",
-    description: "You won't stand a chance against us!",
-    video: "https://storage.opensea.io/files/38945227803851764ca9482dda239a3a.mp4",
-    color: "#ff3af6",
+    name: "LASER EYES",
+    title: "Lasers set to lethal!",
+    description: "We know your every move!",
+    video: "https://storage.opensea.io/files/711a90737f893034650926df22a1dcea.mp4",
+    color: "#8813eb",
     links: [
-      { text: "Stacy", url: "https://twitter.com/cryptostacys"},
-      { text: "Socra", url: "https://twitter.com/SocratreesMusic"},
-      { text: "Devil", url: "https://twitter.com/Crypto_Devils"},
-      { text: "NONE", url: "https://twitter.com/NONE32X32"},
+      { text: "Big Rob", url: "https://twitter.com/bigrobatx"},
+      { text: "PugBits", url: "https://twitter.com/PugBits"},
+      { text: "Content Beware", url: "https://twitter.com/Contentbeware"},
+      { text: "dis0ri3nted", url: "https://twitter.com/dis0ri3nted"},
     ],
     votes: 1,
   },
