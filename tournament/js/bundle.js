@@ -21,7 +21,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 6, 2021 13:57:00 GMT+0200").getTime();
+var countDownDate = new Date("Aug 7, 2021 15:02:00 GMT+0200").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -54,31 +54,31 @@ var x = setInterval(function() {
 
 
 const data = {
-  team1: {
-    name: "TEAM NAKED",
-    title: "The naked menace!",
-    description: "We will be the best, like no one ever was! Because nakedness is justice.",
-    video: "https://storage.opensea.io/files/24266851c4c0e67ff0813062a7424a5d.mp4",
-    color: "#eb8ada",
+  team12: {
+    name: "FLUFFY TOUGH BOYZ",
+    title: "Get Tough, Get Fluffed!",
+    description: "Fists of furry win in a hurry",
+    video: "https://storage.opensea.io/files/b47ff716a6d0f1ef0d4e542b43e3c1de.mp4",
+    color: "#c52696",
     links: [
-      { text: "Zaza", url: "https://twitter.com/ZazaNFT"},
-      { text: "Sincos", url: "https://twitter.com/sincosNFT"},
-      { text: "Hans", url: "https://twitter.com/pxlhns"},
-      { text: "Steamed Bun", url: "https://twitter.com/Steamed_Bunny"},
+      { text: "Bored Blind Devil", url: "https://twitter.com/BoredBlindDevil"},
+      { text: "Gutter Trevor", url: "https://twitter.com/Trevor4ever210"},
+      { text: "Trevor", url: "https://twitter.com/Trevor4ever210"},
+      { text: "2ULUX5", url: "https://twitter.com/2ulux5"},
     ],
     votes: 1,
   },
-  team2: {
-    name: "LASER EYES",
-    title: "Lasers set to lethal!",
-    description: "We know your every move!",
-    video: "https://storage.opensea.io/files/711a90737f893034650926df22a1dcea.mp4",
-    color: "#8813eb",
+  team13: {
+    name: "TEAM ROCKET TO THE MOON",
+    title: "Prepare for brutal trouble!",
+    description: `Make it quadrupal, not double!\nTo Protect NFTs from devastation,\nUniting all peoples, beyond the nations.\nTo denouce all evil, find peace and love,\nTo extend our reach to the Moon above!`,
+    video: "https://storage.opensea.io/files/51ea8d414210fd00c83518084d0b39f9.mp4",
+    color: "#f1a026",
     links: [
-      { text: "Big Rob", url: "https://twitter.com/bigrobatx"},
-      { text: "PugBits", url: "https://twitter.com/PugBits"},
-      { text: "Content Beware", url: "https://twitter.com/Contentbeware"},
-      { text: "dis0ri3nted", url: "https://twitter.com/dis0ri3nted"},
+      { text: "Digi", url: "https://twitter.com/ItsDigi_NFT"},
+      { text: "PixelKnights", url: "https://twitter.com/PixelKnightsNFT"},
+      { text: "Reapers", url: "https://twitter.com/crypto_reapers"},
+      { text: "Maslo", url: "https://twitter.com/NFT_MASLO"},
     ],
     votes: 1,
   },
