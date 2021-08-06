@@ -54,7 +54,7 @@ var x = setInterval(function() {
 
 
 const data = {
-  team12: {
+  team1: {
     name: "FLUFFY TOUGH BOYZ",
     title: "Get Tough, Get Fluffed!",
     description: "Fists of furry win in a hurry",
@@ -68,7 +68,7 @@ const data = {
     ],
     votes: 1,
   },
-  team13: {
+  team2: {
     name: "TEAM ROCKET TO THE MOON",
     title: "Prepare for brutal trouble!",
     description: `Make it quadrupal, not double!\nTo Protect NFTs from devastation,\nUniting all peoples, beyond the nations.\nTo denouce all evil, find peace and love,\nTo extend our reach to the Moon above!`,
