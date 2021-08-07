@@ -3,7 +3,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 1, 2021 00:00:00").getTime();
+var countDownDate = new Date("Sep 1, 2021 00:00:00 GMT+0200").getTime();
 
 const updateTimer = () => {
   var now = new Date().getTime();
