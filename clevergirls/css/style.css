@@ -169,7 +169,7 @@ a {
 .team-title {
   text-align: center;
   font-size: 2.5em;
-  margin: 0 0 40px 0;
+  margin: 0 auto 30px auto;
 }
 
 .team-name {
@@ -271,4 +271,25 @@ a:hover {
   #video-mobile {
     display: block;
   } 
+}
+.subtitle {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.right {
+  padding-left: 30px;
+  border-left: 3px solid #fff;
+}
+
+.right p {
+  font-size: 20px;
+  color: #eee;
+}
+.left p {
+  font-weight: 900;
+}
+
+.report {
+  margin-bottom: 60px;
 }
