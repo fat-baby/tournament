@@ -293,3 +293,8 @@ a:hover {
 .report {
   margin-bottom: 60px;
 }
+
+.navbar {
+  background: #000;
+  padding: .2rem 0;
+}
