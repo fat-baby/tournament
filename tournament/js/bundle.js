@@ -55,20 +55,6 @@ var x = setInterval(function() {
 
 const data = {
   team1: {
-    name: "THE PROPHETS",
-    title: "Our prediction is your defeat",
-    description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
-    color: "#34c92a",
-    video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
-    links: [
-      { text: "Noisy", url: "https://twitter.com/noisynfts"},
-      { text: "Crucifore", url: "https://twitter.com/crucifore"},
-      { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
-      { text: "Dweaver", url: "https://twitter.com/DWeaver803"},
-    ],
-    votes: 1, 
-  },
-  team2: {
     name: "X PuSsYxxMoNeYxxW33D X",
     title: "You don't want this fight!",
     description: "You won't stand a chance against us!",
@@ -82,6 +68,21 @@ const data = {
     ],
     votes: 1,
   },
+  team2: {
+    name: "THE PROPHETS",
+    title: "Our prediction is your defeat",
+    description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
+    color: "#34c92a",
+    video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
+    links: [
+      { text: "Noisy", url: "https://twitter.com/noisynfts"},
+      { text: "Crucifore", url: "https://twitter.com/crucifore"},
+      { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
+      { text: "Dweaver", url: "https://twitter.com/DWeaver803"},
+    ],
+    votes: 1, 
+  },
+  
 }
 
  
