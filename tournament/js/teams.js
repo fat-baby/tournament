@@ -53,7 +53,7 @@ const teams = {
       { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
       { text: "Dweaver", url: "https://twitter.com/DWeaver803"},
     ],
-    votes: 140, 
+    votes: 1, 
   },
   team5: {
     name: "CGSA",
