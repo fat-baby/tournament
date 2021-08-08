@@ -21,7 +21,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 8, 2021 16:23:00 GMT+0200").getTime();
+var countDownDate = new Date("Aug 9, 2021 17:46:00 GMT+0200").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -55,30 +55,30 @@ var x = setInterval(function() {
 
 const data = {
   team1: {
-    name: "MURDER 3YES",
-    title: "You better watch out!",
-    description: "We have seen some things",
-    video: "https://storage.opensea.io/files/073567afef981d31602c4756de193330.mp4",
-    color: "#d9e46b",
+    name: "THE PROPHETS",
+    title: "Our prediction is your defeat",
+    description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
+    color: "#34c92a",
+    video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
     links: [
-      { text: "Sisto", url: "https://twitter.com/NFT_MurderA"},
-      { text: "NiftyCat", url: "https://twitter.com/Nifty_Cats"},
-      { text: "J-838", url: "https://twitter.com/Jae838"},
-      { text: "NFTUpdate", url: "https://twitter.com/NFTupdate"},
+      { text: "Noisy", url: "https://twitter.com/noisynfts"},
+      { text: "Crucifore", url: "https://twitter.com/crucifore"},
+      { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
+      { text: "Dweaver", url: "https://twitter.com/DWeaver803"},
     ],
-    votes: 1,
+    votes: 1, 
   },
   team2: {
-    name: "PURPLE NURPLES",
-    title: "Don't get it twisted!",
-    description: "Wait until you see my master balls!",
-    video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
-    color: "#af50ee",
+    name: "X PuSsYxxMoNeYxxW33D X",
+    title: "You don't want this fight!",
+    description: "You won't stand a chance against us!",
+    video: "https://storage.opensea.io/files/38945227803851764ca9482dda239a3a.mp4",
+    color: "#ff3af6",
     links: [
-      { text: "HashBastards", url: "https://twitter.com/HashBastardsNFT"},
-      { text: "Robbies", url: "https://twitter.com/robbiesnft"},
-      { text: "HOLLYWEIRDZ", url: "https://twitter.com/HOLLYWEIRDZ420"},
-      { text: "Junshi", url: "https://twitter.com/JunshiNFT"},
+      { text: "Stacy", url: "https://twitter.com/cryptostacys"},
+      { text: "Socra", url: "https://twitter.com/SocratreesMusic"},
+      { text: "Devil", url: "https://twitter.com/"},
+      { text: "NONE", url: "https://twitter.com/NONE32X32"},
     ],
     votes: 1,
   },
