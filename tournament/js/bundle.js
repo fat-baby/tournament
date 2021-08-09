@@ -55,34 +55,33 @@ var x = setInterval(function() {
 
 const data = {
   team1: {
-    name: "X PuSsYxxMoNeYxxW33D X",
-    title: "You don't want this fight!",
-    description: "You won't stand a chance against us!",
-    video: "https://storage.opensea.io/files/38945227803851764ca9482dda239a3a.mp4",
-    color: "#ff3af6",
+    name: "Poké-Morghulis",
+    title: "You better be scared of us!",
+    description: "We got this in the bag. Nobody can come close!",
+    video: "https://storage.opensea.io/files/1f60aa2933117a421f8985265de4ab93.mp4",
+    color: "#296fdb",
     links: [
-      { text: "Stacy", url: "https://twitter.com/cryptostacys"},
-      { text: "Socra", url: "https://twitter.com/SocratreesMusic"},
-      { text: "Devil", url: "https://twitter.com/"},
-      { text: "NONE", url: "https://twitter.com/NONE32X32"},
+      { text: "Anze", url: "https://twitter.com/bitcoinski"},
+      { text: "Super Blitz", url: "https://twitter.com/superblitz_"},
+      { text: "LolTapes", url: "https://twitter.com/LolTapes"},
+      { text: "Rudy", url: "https://twitter.com/NeerBro"},
     ],
     votes: 1,
   },
   team2: {
-    name: "THE PROPHETS",
-    title: "Our prediction is your defeat",
-    description: "The crystal poke ball reveals all, so give up now or you’re bound to fall.",
-    color: "#34c92a",
-    video: "https://storage.opensea.io/files/94e382bc35a934fe72506f3cdd5f23fb.mp4",
+    name: "LASER EYES",
+    title: "Lasers set to lethal!",
+    description: "We know your every move!",
+    video: "https://storage.opensea.io/files/711a90737f893034650926df22a1dcea.mp4",
+    color: "#8813eb",
     links: [
-      { text: "Noisy", url: "https://twitter.com/noisynfts"},
-      { text: "Crucifore", url: "https://twitter.com/crucifore"},
-      { text: "Kingbob", url: "https://twitter.com/thehordekingbob"},
-      { text: "Dweaver", url: "https://twitter.com/DWeaver803"},
+      { text: "Big Rob", url: "https://twitter.com/bigrobatx"},
+      { text: "PugBits", url: "https://twitter.com/PugBits"},
+      { text: "Content Beware", url: "https://twitter.com/Contentbeware"},
+      { text: "dis0ri3nted", url: "https://twitter.com/dis0ri3nted"},
     ],
-    votes: 1, 
-  },
-  
+    votes: 1,
+  },  
 }
 
  

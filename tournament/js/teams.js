@@ -99,10 +99,10 @@ const teams = {
   },
   team8: {
     name: "Poké-Morghulis",
-    title: "unknown!",
-    description: "unknown",
+    title: "You better be scared of us!",
+    description: "We got this in the bag. Nobody can come close!",
     video: "https://storage.opensea.io/files/1f60aa2933117a421f8985265de4ab93.mp4",
-    color: "#ff00a0",
+    color: "#296fdb",
     links: [
       { text: "Anze", url: "https://twitter.com/HashBastardsNFT"},
       { text: "Super Blitz", url: "https://twitter.com/robbiesnft"},
