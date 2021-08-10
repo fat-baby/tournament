@@ -21,7 +21,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 10, 2021 18:19:00 GMT+0200").getTime();
+var countDownDate = new Date("Aug 11, 2021 22:05:00 GMT+0200").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -55,33 +55,33 @@ var x = setInterval(function() {
 
 const data = {
   team1: {
-    name: "Poké-Morghulis",
-    title: "You better be scared of us!",
-    description: "We got this in the bag. Nobody can come close!",
-    video: "https://storage.opensea.io/files/1f60aa2933117a421f8985265de4ab93.mp4",
-    color: "#296fdb",
+    name: "FIRE FAIRYS",
+    title: "Fight fire with fire!",
+    description: "We are too hot to handle!",
+    video: "https://storage.opensea.io/files/3df711c3c2b4d19e33f8aa19033f0ba5.mp4",
+    color: "#e95f5f",
     links: [
-      { text: "Anze", url: "https://twitter.com/bitcoinski"},
-      { text: "Super Blitz", url: "https://twitter.com/superblitz_"},
-      { text: "LolTapes", url: "https://twitter.com/LolTapes"},
-      { text: "Rudy", url: "https://twitter.com/NeerBro"},
+      { text: "rentfx", url: "https://twitter.com/renftx"},
+      { text: "Bones", url: "https://twitter.com/BonesClub_NFT"},
+      { text: "dpop", url: "https://twitter.com/deepopped"},
+      { text: "Gersch", url: "https://twitter.com/thedavidgersch"},
     ],
     votes: 1,
   },
   team2: {
-    name: "LASER EYES",
-    title: "Lasers set to lethal!",
-    description: "We know your every move!",
-    video: "https://storage.opensea.io/files/711a90737f893034650926df22a1dcea.mp4",
-    color: "#8813eb",
+    name: "TEAM ROCKET TO THE MOON",
+    title: "Prepare for brutal trouble!",
+    description: `Make it quadrupal, not double!\nTo Protect NFTs from devastation,\nUniting all peoples, beyond the nations.\nTo denouce all evil, find peace and love,\nTo extend our reach to the Moon above!`,
+    video: "https://storage.opensea.io/files/51ea8d414210fd00c83518084d0b39f9.mp4",
+    color: "#f1a026",
     links: [
-      { text: "Big Rob", url: "https://twitter.com/bigrobatx"},
-      { text: "PugBits", url: "https://twitter.com/PugBits"},
-      { text: "Content Beware", url: "https://twitter.com/Contentbeware"},
-      { text: "dis0ri3nted", url: "https://twitter.com/dis0ri3nted"},
+      { text: "Digi", url: "https://twitter.com/ItsDigi_NFT"},
+      { text: "PixelKnights", url: "https://twitter.com/PixelKnightsNFT"},
+      { text: "Reapers", url: "https://twitter.com/crypto_reapers"},
+      { text: "Maslo", url: "https://twitter.com/NFT_MASLO"},
     ],
     votes: 1,
-  },  
+  }, 
 }
 
  
