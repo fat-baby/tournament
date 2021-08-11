@@ -44,7 +44,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "BATTLE OVER";
+    document.getElementById("timer").innerHTML = "COMING SOON";
   }
 }, 1000);
 
@@ -55,30 +55,30 @@ var x = setInterval(function() {
 
 const data = {
   team1: {
-    name: "FIRE FAIRYS",
-    title: "Fight fire with fire!",
-    description: "We are too hot to handle!",
-    video: "https://storage.opensea.io/files/3df711c3c2b4d19e33f8aa19033f0ba5.mp4",
-    color: "#e95f5f",
+    name: "PURPLE NURPLES",
+    title: "Don't get it twisted!",
+    description: "Wait until you see my master balls!",
+    video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
+    color: "#af50ee",
     links: [
-      { text: "rentfx", url: "https://twitter.com/renftx"},
-      { text: "Bones", url: "https://twitter.com/BonesClub_NFT"},
-      { text: "dpop", url: "https://twitter.com/deepopped"},
-      { text: "Gersch", url: "https://twitter.com/thedavidgersch"},
+      { text: "HashBastards", url: "https://twitter.com/HashBastardsNFT"},
+      { text: "Robbies", url: "https://twitter.com/robbiesnft"},
+      { text: "HOLLYWEIRDZ", url: "https://twitter.com/HOLLYWEIRDZ420"},
+      { text: "Junshi", url: "https://twitter.com/JunshiNFT"},
     ],
     votes: 1,
   },
   team2: {
-    name: "TEAM ROCKET TO THE MOON",
-    title: "Prepare for brutal trouble!",
-    description: `Make it quadrupal, not double!\nTo Protect NFTs from devastation,\nUniting all peoples, beyond the nations.\nTo denouce all evil, find peace and love,\nTo extend our reach to the Moon above!`,
-    video: "https://storage.opensea.io/files/51ea8d414210fd00c83518084d0b39f9.mp4",
-    color: "#f1a026",
+    name: "X PuSsYxxMoNeYxxW33D X",
+    title: "You don't want this fight!",
+    description: "You won't stand a chance against us!",
+    video: "https://storage.opensea.io/files/38945227803851764ca9482dda239a3a.mp4",
+    color: "#ff3af6",
     links: [
-      { text: "Digi", url: "https://twitter.com/ItsDigi_NFT"},
-      { text: "PixelKnights", url: "https://twitter.com/PixelKnightsNFT"},
-      { text: "Reapers", url: "https://twitter.com/crypto_reapers"},
-      { text: "Maslo", url: "https://twitter.com/NFT_MASLO"},
+      { text: "Stacy", url: "https://twitter.com/cryptostacys"},
+      { text: "Socra", url: "https://twitter.com/SocratreesMusic"},
+      { text: "Devil", url: "https://twitter.com/"},
+      { text: "NONE", url: "https://twitter.com/NONE32X32"},
     ],
     votes: 1,
   }, 
