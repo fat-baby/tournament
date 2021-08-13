@@ -21,7 +21,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 13, 2021 10:17:00 GMT+0200").getTime();
+var countDownDate = new Date("Aug 14, 2021 10:28:00 GMT+0200").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -56,34 +56,36 @@ var x = setInterval(function() {
 
 const data = {
   team1: {
-    name: "PURPLE NURPLE",
-    title: "Don't get it twisted!",
-    description: "Wait until you see my master balls!",
-    video: "https://storage.opensea.io/files/7923729ef08dde103a2a871211cfe3b7.mp4",
-    color: "#af50ee",
+    name: "LASER EYES",
+    title: "Lasers set to lethal!",
+    description: "We know your every move!",
+    video: "https://storage.opensea.io/files/711a90737f893034650926df22a1dcea.mp4",
+    color: "#8813eb",
     links: [
-      { text: "HashBastards", url: "https://twitter.com/HashBastardsNFT"},
-      { text: "Robbies", url: "https://twitter.com/robbiesnft"},
-      { text: "HOLLYWEIRDZ", url: "https://twitter.com/HOLLYWEIRDZ420"},
-      { text: "Junshi", url: "https://twitter.com/JunshiNFT"},
+      { text: "Big Rob", url: "https://twitter.com/bigrobatx"},
+      { text: "PugBits", url: "https://twitter.com/PugBits"},
+      { text: "Content Beware", url: "https://twitter.com/Contentbeware"},
+      { text: "dis0ri3nted", url: "https://twitter.com/dis0ri3nted"},
     ],
     votes: 1,
   },
   team2: {
-    name: "X PuSsYxxMoNeYxxW33D X",
-    title: "You don't want this fight!",
-    description: "You won't stand a chance against us!",
-    video: "https://storage.opensea.io/files/38945227803851764ca9482dda239a3a.mp4",
-    color: "#ff3af6",
+    name: "FIRE FAIRYS",
+    title: "Fight fire with fire!",
+    description: "We are too hot to handle!",
+    video: "https://storage.opensea.io/files/3df711c3c2b4d19e33f8aa19033f0ba5.mp4",
+    color: "#e95f5f",
     links: [
-      { text: "Stacy", url: "https://twitter.com/cryptostacys"},
-      { text: "Socra", url: "https://twitter.com/SocratreesMusic"},
-      { text: "Devil", url: "https://twitter.com/"},
-      { text: "NONE", url: "https://twitter.com/NONE32X32"},
+      { text: "rentfx", url: "https://twitter.com/renftx"},
+      { text: "Bones", url: "https://twitter.com/BonesClub_NFT"},
+      { text: "dpop", url: "https://twitter.com/deepopped"},
+      { text: "Gersch", url: "https://twitter.com/thedavidgersch"},
     ],
     votes: 1,
-  }, 
+  }
 }
+
+
 
  
 
