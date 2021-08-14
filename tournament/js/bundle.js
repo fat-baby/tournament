@@ -21,7 +21,7 @@ const zeroPad = (s, i) => {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 14, 2021 10:28:00 GMT+0200").getTime();
+var countDownDate = new Date("Aug 15, 2021 10:28:00 GMT+0200").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -44,8 +44,8 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "BATTLE OVER";
-    // document.getElementById("timer").innerHTML = "COMING SOON";
+    //document.getElementById("timer").innerHTML = "BATTLE OVER";
+     document.getElementById("timer").innerHTML = "COMING SOON";
   }
 }, 1000);
 
@@ -56,16 +56,16 @@ var x = setInterval(function() {
 
 const data = {
   team1: {
-    name: "LASER EYES",
-    title: "Lasers set to lethal!",
-    description: "We know your every move!",
-    video: "https://storage.opensea.io/files/711a90737f893034650926df22a1dcea.mp4",
-    color: "#8813eb",
+    name: "X PuSsYxxMoNeYxxW33D X",
+    title: "You don't want this fight!",
+    description: "You won't stand a chance against us!",
+    video: "https://storage.opensea.io/files/38945227803851764ca9482dda239a3a.mp4",
+    color: "#ff3af6",
     links: [
-      { text: "Big Rob", url: "https://twitter.com/bigrobatx"},
-      { text: "PugBits", url: "https://twitter.com/PugBits"},
-      { text: "Content Beware", url: "https://twitter.com/Contentbeware"},
-      { text: "dis0ri3nted", url: "https://twitter.com/dis0ri3nted"},
+      { text: "Stacy", url: "https://twitter.com/cryptostacys"},
+      { text: "Socra", url: "https://twitter.com/SocratreesMusic"},
+      { text: "Devil", url: "https://twitter.com/"},
+      { text: "NONE", url: "https://twitter.com/NONE32X32"},
     ],
     votes: 1,
   },
