@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="site.webmanifest">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>CLEVER GIRLS</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGM9615MGH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VGM9615MGH');
+  </script>
+</head>
+<body onload="init()">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="navbar-fatbaby">CLEVER GIRLS</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#teaser">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item social discord">
+              <a class="nav-link" target="_blank" href="https://discord.gg/pNJdjPPKtN">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">    <path d="M19.952,5.672c-1.904-1.531-4.916-1.79-5.044-1.801c-0.201-0.017-0.392,0.097-0.474,0.281 c-0.006,0.012-0.072,0.163-0.145,0.398c1.259,0.212,2.806,0.64,4.206,1.509c0.224,0.139,0.293,0.434,0.154,0.659 c-0.09,0.146-0.247,0.226-0.407,0.226c-0.086,0-0.173-0.023-0.252-0.072C15.584,5.38,12.578,5.305,12,5.305S8.415,5.38,6.011,6.872 c-0.225,0.14-0.519,0.07-0.659-0.154c-0.14-0.225-0.07-0.519,0.154-0.659c1.4-0.868,2.946-1.297,4.206-1.509 c-0.074-0.236-0.14-0.386-0.145-0.398C9.484,3.968,9.294,3.852,9.092,3.872c-0.127,0.01-3.139,0.269-5.069,1.822 C3.015,6.625,1,12.073,1,16.783c0,0.083,0.022,0.165,0.063,0.237c1.391,2.443,5.185,3.083,6.05,3.111c0.005,0,0.01,0,0.015,0 c0.153,0,0.297-0.073,0.387-0.197l0.875-1.202c-2.359-0.61-3.564-1.645-3.634-1.706c-0.198-0.175-0.217-0.477-0.042-0.675 c0.175-0.198,0.476-0.217,0.674-0.043c0.029,0.026,2.248,1.909,6.612,1.909c4.372,0,6.591-1.891,6.613-1.91 c0.198-0.172,0.5-0.154,0.674,0.045c0.174,0.198,0.155,0.499-0.042,0.673c-0.07,0.062-1.275,1.096-3.634,1.706l0.875,1.202 c0.09,0.124,0.234,0.197,0.387,0.197c0.005,0,0.01,0,0.015,0c0.865-0.027,4.659-0.667,6.05-3.111 C22.978,16.947,23,16.866,23,16.783C23,12.073,20.985,6.625,19.952,5.672z M8.891,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913s1.674,0.857,1.674,1.913S9.816,14.87,8.891,14.87z M15.109,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913c0.924,0,1.674,0.857,1.674,1.913S16.033,14.87,15.109,14.87z"/></svg>
+              </a>
+            </li>
+            <li class="nav-item social twitter">
+              <a class="nav-link" target="_blank" href="https://twitter.com/clevergirlsNFT">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40" width="24px" height="24px"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#fff" transform="translate(-300.000000, -164.000000)"><path d="M348,168.735283 C346.236309,169.538462 344.337383,170.081618 342.345483,170.324305 C344.379644,169.076201 345.940482,167.097147 346.675823,164.739617 C344.771263,165.895269 342.666667,166.736006 340.418384,167.18671 C338.626519,165.224991 336.065504,164 333.231203,164 C327.796443,164 323.387216,168.521488 323.387216,174.097508 C323.387216,174.88913 323.471738,175.657638 323.640782,176.397255 C315.456242,175.975442 308.201444,171.959552 303.341433,165.843265 C302.493397,167.339834 302.008804,169.076201 302.008804,170.925244 C302.008804,174.426869 303.747139,177.518238 306.389857,179.329722 C304.778306,179.280607 303.256911,178.821235 301.9271,178.070061 L301.9271,178.194294 C301.9271,183.08848 305.322064,187.17082 309.8299,188.095341 C309.004402,188.33225 308.133826,188.450704 307.235077,188.450704 C306.601162,188.450704 305.981335,188.390033 305.381229,188.271578 C306.634971,192.28169 310.269414,195.2026 314.580032,195.280607 C311.210424,197.99061 306.961789,199.605634 302.349709,199.605634 C301.555203,199.605634 300.769149,199.559408 300,199.466956 C304.358514,202.327194 309.53689,204 315.095615,204 C333.211481,204 343.114633,188.615385 343.114633,175.270495 C343.114633,174.831347 343.106181,174.392199 343.089276,173.961719 C345.013559,172.537378 346.684275,170.760563 348,168.735283"/></g></g></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section id="teaser" class="videoBackground">
+    <div class="vignette"></div>
+    <div class="overlay"></div>
+    <video id="video-full" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="videos/bg.webm" type="video/mp4">
+    </video>
+    <video id="video-mobile" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="videos/bg-mobile.webm" type="video/mp4">
+    </video>
+    
+    <div class="container teaser-content">
+      <div class="text-container">
+        <p class="line1">You thought they were extinct.</p>
+        <p class="line2">You thought they had poor fashion sense.</p>
+        <p class="line3">You thought they couldn't open a jar of pickles.</p>
+        <h1 class="line4"><span class="word1">YOU. </span><span class="word2">WERE. </span><span class="word3">WRONG.</span></h1>
+      </div>
+      
+      <div class="timer-container">
+        <div id="timer">00 <span class='timeUnits'>days</span> - 00 <span class='timeUnits'>hours</span> - 00 <span class='timeUnits'>minutes</span> - 00 <span class='timeUnits'>seconds</span></div>
+      </div>
+      
+    </div>
+  </section>
+  <hr>
+  
+  <section id="report">
+    <div class="container">
+      <div class="row justify-content-center"">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <img class="about-logo" src="img/logo.gif" alt="">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 d-flex align-items-center flex-wrap align-content-center">
+          <h1 class="team-title">CLEVER GIRLS: <br> LAB REPORT</h1>
+          <h2 class="subtitle">AUGUST 2021 - <br> THE INCUBATION PERIOD</h2>
+        </div>
+      </div>
+      
+      <br>
+      <br>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            1st AUGUST <br><br>
+            FATBABY REVEALS <br> 
+            CLEVER GIRLS <br>
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            Lightning flashes! Clouds of rolling vapour tumble forth! The laboratory doors hiss open....
+            <br>FatBaby emerges, clutching the wet embryo sac of her latest collection: CLEVER GIRLS. 
+            <br><br>SINCOS, Steamed Bun and Ghost gaze at her in quiet awe. They stare at the CLEVER GIRLS: they are beautiful, but also kinda scary. Like a rainbow swinging a baseball bat. 
+            <br><br>Meanwhile, deep in the laboratory, the CLEVER GIRLS Discord server hatches. It is also very wet, which might be a fire hazard. Slowly it reaches out a talon and starts clawing at the internet… 
+            <br><br><span class="tldr">TL/DR: CLEVER GIRLS ANNOUNCED. DISCORD SERVER LAUNCHED: <a href="https://discord.gg/pNJdjPPKtN">https://discord.gg/pNJdjPPKtN</a></span></p>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            2nd AUGUST <br><br>
+            CLEVER GIRLS WEBSITE <br> 
+            COMES TO LIFE <br>
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            The next day all is quiet, save for the gentle tinkle of test tubes, the quiet hum of the laboratory cooling system overhead. Then -- 
+            <br><br>The silence is shattered by the cackling of SINCOS and Steamed Bun: 
+            <br><br><i>SINCOS: IT’S… IT’S ALIVE!</i> 
+            <br><i>Steamed Bun: BWAH HA HA HA HA!</i>
+            <br><br>Their faces are lit by the glow of their creation: the CLEVER GIRLS website… is alive
+            <br><br><span class="tldr">TL/DR: SINCOS AND STEAMED BUN DID A COOL WEBSITE: <a href="https://www.fatbaby.club/clevergirls/">https://www.fatbaby.club/clevergirls/</a></span></p>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            7th AUGUST <br><br>
+            THE CLEVER GIRLS<br> 
+            HUMAN TESTING<br>
+            PROGRAM BEGINS<br>
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>CLEVER GIRLS GIVEAWAY #1</b><br>7pm GMT+1 - Twitter (@CleverGirlsNFT)
+            <br><br>FatBaby calls an emergency meeting with her team of MAD SCIENTISTS. Her experiments are progressing at an alarming rate... 
+            <br><br><i>FatBaby: I need some human TEST SUBJECTS to test my latest findings… Here, take these LAB KEYS and find me some humans! </i>
+            <br><br>And so SINCOS, Steamed Bun and Ghost Kid initiate the HUMAN TESTING PROGRAM. Chosen test subjects will be given LAB KEYS which will unlock a CLEVER GIRLS NFT on DROP DAY.
+            <br><br><span class="tldr">TL/DR: WEEKLY GIVEAWAYS BEGIN 7th AUGUST 2021. 1st GIVEAWAY 7PM GMT+1. ON TWITTER (@CleverGirlsNFT). WINNERS RECEIVE 1x CLEVER GIRLS LAB KEY TO UNLOCK A CLEVER GIRLS NFT ON DROP DAY.</span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            11th AUGUST <br><br>
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>CLEVER GIRLS GIVEAWAY #2 </b><br>7pm GMT+1 - Twitter (@CleverGirlsNFT)
+          </p>
+        </div>
+      </div>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            15th AUGUST <br><br>
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>CLEVER GIRLS GIVEAWAY #3 </b><br>7pm GMT+1 - Twitter (@CleverGirlsNFT)
+          </p>
+        </div>
+      </div>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            22nd AUGUST <br><br>
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>CLEVER GIRLS GIVEAWAY #4 </b><br>7pm GMT+1 - Twitter (@CleverGirlsNFT)
+          </p>
+        </div>
+      </div>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            27th-31st AUGUST <br><br>
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>CLEVER GIRLS GIVEAWAY OVERLOAD!</b><br>7pm GMT+1 - Discord exclusive!
+            <br><br>As FatBaby’s research enters its perilous final stages, she requires a fresh batch of TEST SUBJECTS to ensure her experiments are 100% SCIENCE. For 5 days straight, the MAD SCIENTISTS recruit TEST SUBJECTS, giving away a new LAB KEY every 24 hours! 
+            <br><br><span class="tldr">TL/DR: DAILY GIVEAWAYS IN FINAL 5 DAYS OF AUGUST. DISCORD EXCLUSIVE.</span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center"">
+        <div class="col-lg-4 col-md-6 col-sm-6 d-flex align-items-center flex-wrap align-content-center">
+          <h2 class="subtitle">SEPTEMBER 2021 -<br>HATCHING SEASON</h2>
+        </div>
+      </div>
+      
+      <br>
+      <br>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            1st September <br><br>
+            DROP DAY
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>DROP DAY. </b>
+            <br><br>The laboratory doors hiss open once more. The MAD SCIENTISTS emerge shivering, covered in gunk. 
+            <br><br>But look! A wild FatBaby appears! She is clutching 5555 INCUBATORS! (She is really good at carrying things!)
+            <br><br><i>FatBaby: FLY, MY PRETTIES! </i>
+            <br><br>And so, 5555 brave little CLEVER GIRL incubators are transferred from the FatBaby Experimental Research Facility and arrive at their new home: OpenSea. 
+            <br><br><span class="tldr">TL/DR: DROP DAY. CLEVER GIRL INCUBATORS GO ON SALE RIGHT HERE AT FATBABY.CLUB/CLEVERGIRLS. MINT PRICE: 0.05ETH + GAS FEES.</span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            5th September <br><br>
+            HATCH DAY
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>HATCH DAY. </b>
+            <br><br>After 5 anxious days, the incubators EXPLO- err, HATCH, revealing the brain-melting, breath-taking majesty of the CLEVER GIRL inside!
+            <br><br>And in celebration of her terrifying yet extremely awesome experiment, FatBaby handcrafts 5 special-edition CLEVER GIRLS and auctions them throughout the day. 50% of the proceeds go to Mermaids, a charity that supports gender-diverse young people. Should any auction exceed 5ETH, FatBaby vows to pay for the top-surgery of someone in financial need. 
+            <br><br><span class="tldr">TL/DR: HATCHING DAY. THE CONTENTS OF EACH INCUBATOR IS REVEALED! 5 HANDCRAFTED CLEVER GIRLS PUT UP FOR AUCTION WITH 50% OF THE PROCEEDS GOING TO CHARITY. SHOULD ANY AUCTION EXCEED 5ETH, FATBABY WILL PAY THE TOP SURGERY BILLS OF SOMEONE IN NEED.</span> 
+          </p>
+        </div>
+      </div>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            UPON SELLING OUT
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>CLEVER GIRLS SECRET EXPERIMENT#1 is revealed… </b>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center"">
+        <div class="col-lg-4 col-md-6 col-sm-6 d-flex align-items-center flex-wrap align-content-center">
+          <h2 class="subtitle">OCTOBER AND BEYOND...</h2>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            OCTOBER 2021
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>Watch out- we’re airdropping CLEVER GIRLS EXPERIMENTAL MATERIAL to CLEVER GIRLS owners! Keep an eye on our sneaky-lil-peakies Discord server for, you know… sneaky-lil-peakies at FatBaby’s creations...</b>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row report">
+        <div class="col-lg-2 col-md-3 left">
+          <p>
+            TBA 2021
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-9 right">
+          <p>
+            <b>CLEVER GIRLS SECRET EXPERIMENT#1 will be unleashed…</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <hr>
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <h1 class="team-title">THE MAD SCIENTISTS</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 team-member">
+          <a href="https://twitter.com/NftFat" target="_blank">
+            <img class="team-img" src="img/FatBaby.png" alt="FatBaby Clever Girl Profile">
+            <div class="team-name">FatBaby</div>
+            <div class="team-description">Draws and animates stuff</div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 team-member">
+          <a href="https://twitter.com/_ghstkd" target="_blank">
+            <img class="team-img" src="img/GhostKid.png" alt="GhostKid Clever Girl Profile">
+            <div class="team-name">Ghost Kid</div>
+            <div class="team-description">Writes and organizes stuff</div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 team-member">
+          <a href="https://twitter.com/steamed_bunny" target="_blank">
+            <img class="team-img" src="img/SteamedBun.png" alt="SteamedBun Clever Girl Profile">
+            <div class="team-name">Steamed Bun</div>
+            <div class="team-description">Codes and organizes stuff</div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 team-member">
+          <a href="https://twitter.com/sincosNFT" target="_blank">
+            <img class="team-img" src="img/Sincos.png" alt="Sincos Clever Girl Profile">
+            <div class="team-name">SINCOS</div>
+            <div class="team-description">Codes and hacks stuff</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+  <script src="js/anime.min.js"></script> 
+  <script src="js/bundle.js"></script> 
+</body>
+</html>
