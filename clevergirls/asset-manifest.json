@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://fatbaby.club/clevergirls/static/css/main.751c0221.chunk.css",
-    "main.js": "https://fatbaby.club/clevergirls/static/js/main.2b6f85da.chunk.js",
-    "main.js.map": "https://fatbaby.club/clevergirls/static/js/main.2b6f85da.chunk.js.map",
+    "main.js": "https://fatbaby.club/clevergirls/static/js/main.9f91e3cf.chunk.js",
+    "main.js.map": "https://fatbaby.club/clevergirls/static/js/main.9f91e3cf.chunk.js.map",
     "runtime-main.js": "https://fatbaby.club/clevergirls/static/js/runtime-main.350cc036.js",
     "runtime-main.js.map": "https://fatbaby.club/clevergirls/static/js/runtime-main.350cc036.js.map",
     "static/js/2.35f0da58.chunk.js": "https://fatbaby.club/clevergirls/static/js/2.35f0da58.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.350cc036.js",
     "static/js/2.35f0da58.chunk.js",
     "static/css/main.751c0221.chunk.css",
-    "static/js/main.2b6f85da.chunk.js"
+    "static/js/main.9f91e3cf.chunk.js"
   ]
 }
